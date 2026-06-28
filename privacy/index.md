@@ -32,6 +32,7 @@ We only use the data we collect for the sole purpose of operating the extension:
 We are committed to keeping your data secure and minimizing data retention:
 
 *   **Account Data Storage:** Your email address, User ID, and quota usage statistics are stored securely using **Supabase**, a cloud database provider with strict access controls and row-level security. Your data is kept only as long as your account is active.
+*   **Local Storage (No Cookies):** We use Chrome's Local Storage mechanism exclusively to store your app preferences (like target language) and authentication tokens locally on your device. We DO NOT use cookies, trackers, or any third-party analytics (like Google Analytics/Meta Pixels) to track your web activity across sites.
 *   **Image Storage (Zero Retention):** **We do NOT store, log, or save any images you process.** Cropped images sent to our server are processed entirely in-memory and are instantaneously and permanently discarded by our server the moment the translated text is returned to your browser. 
 *   **Security:** We transmit all data (including images and account data) over secure, encrypted connections (HTTPS/SSL).
 
@@ -52,6 +53,9 @@ Specifically, we affirm that:
 ## 6. User Rights & Data Deletion
 You have the right to access, modify, or delete your personal data at any time. If you wish to delete your account and have all associated email and quota data permanently removed from our database, please contact us using the email below.
 
-## 7. Contact Us
+## 7. Children's Privacy (COPPA)
+Our extension is not directed to children under the age of 13 (or 16 in certain jurisdictions), and we do not knowingly collect personal information from children. If we become aware that we have inadvertently received personal information from a visitor under the designated age, we will delete the information from our records immediately.
+
+## 8. Contact Us
 If you have any questions, concerns, or data deletion requests regarding this Privacy Policy, please contact the developer at:
 **hle019dn@gmail.com**

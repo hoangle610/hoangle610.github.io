@@ -14,21 +14,21 @@ To function correctly, the extension requests the following permissions. Here is
 *   **`identity`:** Used to facilitate secure sign-in via your Google account, allowing you to access your translation quotas and premium features.
 *   **`storage`:** Used to save your local extension settings (e.g., preferred target language).
 
-## 2. Data Collection
+## 2. User Data Collection
 We collect the bare minimum amount of data required to provide our translation services:
 
 *   **Authentication & Account Data:** When you sign in, we collect your email address and generate a unique User ID. 
 *   **User-Generated Content (Cropped Images):** When you actively select a speech bubble on a webpage to translate, we temporarily collect the specific cropped image of that selection.
 *   **What we DO NOT collect:** We absolutely do not collect your browsing history, the URLs of the web pages you visit, the manga you read, your search queries, or your financial/credit card details.
 
-## 3. Data Handling (How we use your data)
+## 3. User Data Handling (How we use your data)
 We only use the data we collect for the sole purpose of operating the extension:
 
 *   **Image Processing:** The cropped images you manually select are transmitted exclusively to our secure backend API to perform Optical Character Recognition (OCR) and text translation. 
 *   **Account Management:** Your email address and User ID are used strictly to manage your account, authenticate your login, track your daily translation limits, and verify your Premium subscription status.
 *   **Payments:** All subscription and payment processing is handled entirely by our merchant of record (Lemon Squeezy). We do not handle, process, or see your financial information.
 
-## 4. Data Storage
+## 4. User Data Storage
 We are committed to keeping your data secure and minimizing data retention:
 
 *   **Account Data Storage:** Your email address, User ID, and quota usage statistics are stored securely using **Supabase**, a cloud database provider with strict access controls and row-level security. Your data is kept only as long as your account is active.
@@ -36,7 +36,7 @@ We are committed to keeping your data secure and minimizing data retention:
 *   **Image Storage (Zero Retention):** **We do NOT store, log, or save any images you process.** Cropped images sent to our server are processed entirely in-memory and are instantaneously and permanently discarded by our server the moment the translated text is returned to your browser. 
 *   **Security:** We transmit all data (including images and account data) over secure, encrypted connections (HTTPS/SSL).
 
-## 5. Data Sharing & Limited Use Disclosure
+## 5. User Data Sharing & Limited Use Disclosure
 We **do not** sell, rent, or trade your personal information to any third parties for marketing, advertising, or any other purposes. We only share data with the following trusted third-party service providers strictly necessary for the extension to function:
 
 *   **Supabase:** We share your email and authentication state with Supabase to provide secure login and database management.

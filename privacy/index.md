@@ -17,7 +17,7 @@ To function correctly, the extension requests the following permissions. Here is
 ## 2. User Data Collection
 We collect the bare minimum amount of data required to provide our translation services:
 
-*   **Authentication & Account Data:** When you sign in, we collect your email address and generate a unique User ID. 
+*   **Authentication & Account Data:** When you sign in, we collect your email address and generate a unique User ID. If you choose to sign in using an email and password, your password is mathematically hashed and securely processed by our authentication provider (Supabase). We never store, see, or have access to your plain-text password.
 *   **User-Generated Content (Cropped Images):** When you actively select a speech bubble on a webpage to translate, we temporarily collect the specific cropped image of that selection.
 *   **What we DO NOT collect:** We absolutely do not collect your browsing history, the URLs of the web pages you visit, the manga you read, your search queries, or your financial/credit card details.
 
@@ -31,7 +31,7 @@ We only use the data we collect for the sole purpose of operating the extension:
 ## 4. User Data Storage
 We are committed to keeping your data secure and minimizing data retention:
 
-*   **Account Data Storage:** Your email address, User ID, and quota usage statistics are stored securely using **Supabase**, a cloud database provider with strict access controls and row-level security. Your data is kept only as long as your account is active.
+*   **Account Data Storage:** Your email address, User ID, hashed password (if applicable), and quota usage statistics are stored securely using **Supabase**, a cloud database provider with strict access controls and row-level security. Your data is kept only as long as your account is active.
 *   **Local Storage (No Cookies):** We use Chrome's Local Storage mechanism exclusively to store your app preferences (like target language) and authentication tokens locally on your device. We DO NOT use cookies, trackers, or any third-party analytics (like Google Analytics/Meta Pixels) to track your web activity across sites.
 *   **Image Storage (Zero Retention):** **We do NOT store, log, or save any images you process.** Cropped images sent to our server are processed entirely in-memory and are instantaneously and permanently discarded by our server the moment the translated text is returned to your browser. 
 *   **Security:** We transmit all data (including images and account data) over secure, encrypted connections (HTTPS/SSL).

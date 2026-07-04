@@ -44,11 +44,12 @@ We **do not** sell, rent, or trade your personal information to any third partie
 *   **Lemon Squeezy:** If you upgrade to a Premium plan, your email is shared with Lemon Squeezy to process your transaction and manage your subscription.
 
 **Limited Use Compliance:**
-The MangaOCR Translator extension's use and transfer to any other app of information received from Google APIs will adhere to the [Chrome Web Store User Data Policy](https://developer.chrome.com/docs/webstore/user_data/), including the Limited Use requirements. 
+The MangaOCR Translator extension complies with the [Chrome Web Store User Data Policy](https://developer.chrome.com/docs/webstore/user_data/), including the Limited Use requirements. 
 Specifically, we affirm that:
-1. We do not use or transfer your data to determine creditworthiness or for lending purposes.
-2. We do not use or transfer your data for purposes that are unrelated to the item's core functionality.
-3. We do not sell your data to third parties.
+1. **Allowed use:** We only use permissions and collect user data to provide or improve our single purpose and core user-facing features (translating manga/images).
+2. **Allowed transfer:** We only transfer user data to others if that transfer is necessary to provide or improve the core features, comply with applicable laws, or for security purposes.
+3. **Prohibited advertising:** We NEVER use or transfer user data to serve users personalized, re-targeted, or interest-based advertisements.
+4. **Prohibited human interaction:** We do not allow humans to read user data unless we obtain your explicit consent, it is necessary for security purposes, to comply with applicable laws, or the data is aggregated and anonymized.
 
 ## 6. User Rights & Data Deletion
 You have the right to access, modify, or delete your personal data at any time. If you wish to delete your account and have all associated email and quota data permanently removed from our database, please contact us using the email below.

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Solver AI - Privacy Policy</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f0f14; color: #e0e0e8; line-height: 1.8; padding: 40px 20px; }
+    .container { max-width: 720px; margin: 0 auto; }
+    h1 { font-size: 28px; margin-bottom: 8px; background: linear-gradient(135deg, #a5b4fc, #c084fc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .subtitle { color: #9898a8; margin-bottom: 32px; font-size: 14px; }
+    h2 { font-size: 18px; color: #f0f0f5; margin: 28px 0 12px; }
+    p, li { font-size: 15px; color: #c0c0cc; margin-bottom: 12px; }
+    ul { padding-left: 24px; }
+    li { margin-bottom: 8px; }
+    strong { color: #f0f0f5; }
+    a { color: #818cf8; }
+    .divider { border: none; border-top: 1px solid rgba(255,255,255,0.06); margin: 32px 0; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">Quiz Solver AI — Last updated: September 2026</p>
+
+    <h2>1. Overview</h2>
+    <p>Quiz Solver AI is a Chrome extension that helps users solve multiple-choice quizzes using Google's Gemini AI. We are committed to protecting your privacy and being transparent about our data practices.</p>
+
+    <h2>2. Data Collection</h2>
+    <p>This extension collects and processes the following data <strong>locally on your device only</strong>:</p>
+    <ul>
+      <li><strong>Gemini API Key</strong> — stored in Chrome's local storage on your device. Never transmitted to any server other than Google's Gemini API.</li>
+      <li><strong>Quiz content</strong> — question text and answer options scraped from the active page. This data is sent to Google's Gemini API for processing and is not stored or logged by the extension.</li>
+      <li><strong>User preferences</strong> — model selection, auto-click, and auto-submit settings stored in Chrome's local storage.</li>
+    </ul>
+
+    <h2>3. Data Storage</h2>
+    <p>All data is stored locally using Chrome's <code>chrome.storage.local</code> API. No data is transmitted to any third-party servers, databases, or analytics services operated by the extension developer.</p>
+
+    <h2>4. Third-Party Services</h2>
+    <p>This extension communicates with <strong>Google's Generative AI API (Gemini)</strong> to process quiz questions. Data sent to this API is subject to <a href="https://ai.google.dev/gemini-api/terms" target="_blank">Google's Gemini API Terms of Service</a> and <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</p>
+
+    <h2>5. Permissions Explained</h2>
+    <ul>
+      <li><strong>activeTab</strong> — Access the content of the currently active tab to scrape quiz questions.</li>
+      <li><strong>storage</strong> — Save your API key and preferences locally.</li>
+      <li><strong>scripting</strong> — Inject scripts to detect and highlight quiz answers on web pages.</li>
+      <li><strong>webNavigation</strong> — Access iframe contents to find quizzes embedded in sub-frames.</li>
+      <li><strong>host_permissions (&lt;all_urls&gt;)</strong> — Required to operate on any quiz platform, as quizzes can be hosted on any domain.</li>
+    </ul>
+
+    <h2>6. Data Sharing</h2>
+    <p>We do <strong>not</strong> sell, share, or transfer your data to any third parties for any purpose other than the core functionality described above (sending quiz data to Google's Gemini API for solving).</p>
+
+    <h2>7. Security</h2>
+    <p>Your API key is stored only in Chrome's secure local storage and is transmitted only via HTTPS to Google's API endpoints. The extension does not log, cache, or persist any quiz data after processing.</p>
+
+    <h2>8. Children's Privacy</h2>
+    <p>This extension is not directed at children under 13 years of age. We do not knowingly collect personal information from children.</p>
+
+    <h2>9. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Any changes will be reflected in the "Last updated" date above and in updated versions of the extension.</p>
+
+    <h2>10. Contact</h2>
+    <p>If you have questions about this privacy policy, please contact the developer through the Chrome Web Store listing.</p>
+
+    <hr class="divider">
+    <p style="font-size: 13px; color: #6b6b7b;">© 2026 Quiz Solver AI. All rights reserved.</p>
+  </div>
+</body>
+</html>

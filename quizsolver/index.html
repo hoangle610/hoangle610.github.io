@@ -3,70 +3,163 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiz Solver AI - Privacy Policy</title>
+  <title>Privacy Policy - Quiz Solver AI</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f0f14; color: #e0e0e8; line-height: 1.8; padding: 40px 20px; }
-    .container { max-width: 720px; margin: 0 auto; }
-    h1 { font-size: 28px; margin-bottom: 8px; background: linear-gradient(135deg, #a5b4fc, #c084fc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-    .subtitle { color: #9898a8; margin-bottom: 32px; font-size: 14px; }
-    h2 { font-size: 18px; color: #f0f0f5; margin: 28px 0 12px; }
-    p, li { font-size: 15px; color: #c0c0cc; margin-bottom: 12px; }
-    ul { padding-left: 24px; }
-    li { margin-bottom: 8px; }
-    strong { color: #f0f0f5; }
-    a { color: #818cf8; }
-    .divider { border: none; border-top: 1px solid rgba(255,255,255,0.06); margin: 32px 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.75;
+      padding: 48px 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #1e293b;
+      padding: 40px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
+    }
+    h1 {
+      font-size: 30px;
+      font-weight: 800;
+      margin-bottom: 8px;
+      background: linear-gradient(135deg, #818cf8 0%, #c084fc 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: -0.02em;
+    }
+    .date {
+      color: #94a3b8;
+      font-size: 14px;
+      margin-bottom: 28px;
+      font-weight: 500;
+    }
+    h2 {
+      font-size: 19px;
+      color: #f8fafc;
+      margin: 32px 0 12px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    p, li {
+      font-size: 15px;
+      color: #cbd5e1;
+      margin-bottom: 12px;
+    }
+    ul {
+      padding-left: 24px;
+      margin-bottom: 14px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    strong {
+      color: #f1f5f9;
+    }
+    a {
+      color: #818cf8;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .badge {
+      display: inline-block;
+      padding: 2px 8px;
+      background: rgba(99, 102, 241, 0.15);
+      border: 1px solid rgba(99, 102, 241, 0.3);
+      border-radius: 4px;
+      color: #a5b4fc;
+      font-family: monospace;
+      font-size: 13px;
+    }
+    .footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 13px;
+      color: #64748b;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Privacy Policy</h1>
-    <p class="subtitle">Quiz Solver AI — Last updated: September 2026</p>
+    <h1>Privacy Policy for Quiz Solver AI</h1>
+    <p class="date">Last Updated: October 2026</p>
 
-    <h2>1. Overview</h2>
-    <p>Quiz Solver AI is a Chrome extension that helps users solve multiple-choice quizzes using Google's Gemini AI. We are committed to protecting your privacy and being transparent about our data practices.</p>
+    <p>Welcome to <strong>Quiz Solver AI - Homework &amp; Exam Assistant</strong>! Your privacy is critically important to us. This Privacy Policy outlines how the Quiz Solver AI Chrome Extension (“we”, “our”, or “the Extension”) handles your information to strictly comply with Google Chrome Web Store User Data Privacy policies and industry data protection standards.</p>
 
-    <h2>2. Data Collection</h2>
-    <p>This extension collects and processes the following data <strong>locally on your device only</strong>:</p>
+    <p>In accordance with Google’s requirements, this policy explicitly details our practices regarding the collection, handling, storage, and sharing of user data, as well as the permissions requested by the extension.</p>
+
+    <h2>1. Extension Permissions &amp; Justification</h2>
+    <p>To function correctly, the extension requests the following permissions. Here is how they are used and how they relate to your privacy:</p>
     <ul>
-      <li><strong>Gemini API Key</strong> — stored in Chrome's local storage on your device. Never transmitted to any server other than Google's Gemini API.</li>
-      <li><strong>Quiz content</strong> — question text and answer options scraped from the active page. This data is sent to Google's Gemini API for processing and is not stored or logged by the extension.</li>
-      <li><strong>User preferences</strong> — model selection, auto-click, and auto-submit settings stored in Chrome's local storage.</li>
+      <li><span class="badge">&lt;all_urls&gt;</span> <strong>(Access to quiz platforms):</strong> Required so the extension can detect multiple-choice quiz questions, radio buttons, and checkboxes across varied educational LMS portals (Canvas, Blackboard, Moodle, Harvard ManageMentor, Google Forms, and custom university test URLs). We <strong>DO NOT</strong> monitor, track, collect, or store your web browsing history. The extension only analyzes question elements locally on the active page when you request it.</li>
+      <li><span class="badge">activeTab</span> <strong>(Active Tab Interaction):</strong> Allows the extension to interact with the currently opened quiz tab when you click "Solve Quiz" or press the <kbd>Alt + A</kbd> keyboard shortcut to scan questions and apply visual answer highlights.</li>
+      <li><span class="badge">storage</span> <strong>(Local Settings):</strong> Used exclusively to save your local extension preferences (such as selected AI model, auto-click toggles, personal API key if using Free mode, and Pro license activation state) locally on your device.</li>
+      <li><span class="badge">scripting</span> <strong>(Visual Answer Highlighting):</strong> Required to apply visual highlight badges (e.g. green border around the optimal answer) and auto-select choices directly in the web page.</li>
+      <li><span class="badge">webNavigation</span> <strong>(Nested Frame Support):</strong> Required to enumerate and detect quiz questions embedded inside sub-frames and iframes, which is common in complex learning platforms such as Harvard ManageMentor and Canvas LMS.</li>
     </ul>
 
-    <h2>3. Data Storage</h2>
-    <p>All data is stored locally using Chrome's <code>chrome.storage.local</code> API. No data is transmitted to any third-party servers, databases, or analytics services operated by the extension developer.</p>
-
-    <h2>4. Third-Party Services</h2>
-    <p>This extension communicates with <strong>Google's Generative AI API (Gemini)</strong> to process quiz questions. Data sent to this API is subject to <a href="https://ai.google.dev/gemini-api/terms" target="_blank">Google's Gemini API Terms of Service</a> and <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</p>
-
-    <h2>5. Permissions Explained</h2>
+    <h2>2. User Data Collection</h2>
+    <p>We collect the absolute bare minimum amount of data required to provide our quiz-solving assistance:</p>
     <ul>
-      <li><strong>activeTab</strong> — Access the content of the currently active tab to scrape quiz questions.</li>
-      <li><strong>storage</strong> — Save your API key and preferences locally.</li>
-      <li><strong>scripting</strong> — Inject scripts to detect and highlight quiz answers on web pages.</li>
-      <li><strong>webNavigation</strong> — Access iframe contents to find quizzes embedded in sub-frames.</li>
-      <li><strong>host_permissions (&lt;all_urls&gt;)</strong> — Required to operate on any quiz platform, as quizzes can be hosted on any domain.</li>
+      <li><strong>Quiz Question Data:</strong> The text of visible quiz questions and answer options on your active screen is temporarily parsed when you click solve. This data is processed in real time and is <strong>never logged, permanently saved, or tied to your personal identity</strong>.</li>
+      <li><strong>License Activation Data:</strong> If you upgrade to our Pro or Annual plan, you will enter a License Key. We process this key to validate your purchase status with our payment provider (Lemon Squeezy).</li>
+      <li><strong>Custom API Key (Optional):</strong> If you choose the Free (BYOK) mode, your personal Gemini API key is stored strictly on your local browser. It is never transmitted to our servers.</li>
+      <li><strong>What we DO NOT collect:</strong> We absolutely do not collect your personal browsing history, unrelated web page URLs, search queries, personal emails, passwords, or financial/credit card details.</li>
     </ul>
 
-    <h2>6. Data Sharing</h2>
-    <p>We do <strong>not</strong> sell, share, or transfer your data to any third parties for any purpose other than the core functionality described above (sending quiz data to Google's Gemini API for solving).</p>
+    <h2>3. User Data Handling (How We Use Your Data)</h2>
+    <p>We only use the data we process for the sole purpose of operating the extension's core features:</p>
+    <ul>
+      <li><strong>Quiz Solving:</strong> Question text is transmitted securely to Google's official Gemini AI API (or through our secure serverless proxy) strictly to analyze choices and return the optimal answer choice.</li>
+      <li><strong>License Validation:</strong> The License Key you enter is transmitted to our backend merchant (Lemon Squeezy) to verify your Pro subscription status and unlock cloud solving.</li>
+      <li><strong>Payments:</strong> All subscription and payment processing is handled entirely by our merchant of record (<strong>Lemon Squeezy</strong>). We do not handle, process, or see your credit card or banking information.</li>
+    </ul>
 
-    <h2>7. Security</h2>
-    <p>Your API key is stored only in Chrome's secure local storage and is transmitted only via HTTPS to Google's API endpoints. The extension does not log, cache, or persist any quiz data after processing.</p>
+    <h2>4. User Data Storage &amp; Security</h2>
+    <p>We are committed to keeping your data secure and minimizing data retention:</p>
+    <ul>
+      <li><strong>Local Storage (No Cookies / No Cross-Site Trackers):</strong> We use Chrome’s Local Storage mechanism exclusively to store your app preferences and license state locally on your device. We <strong>DO NOT</strong> use tracking cookies, analytics trackers, or advertising pixels (like Google Analytics, Facebook Pixel) to track your web activity across sites.</li>
+      <li><strong>Encryption &amp; Security:</strong> All network communications (including AI requests and license verification) take place strictly over secure, encrypted HTTPS/TLS connections.</li>
+    </ul>
 
-    <h2>8. Children's Privacy</h2>
-    <p>This extension is not directed at children under 13 years of age. We do not knowingly collect personal information from children.</p>
+    <h2>5. User Data Sharing &amp; Limited Use Disclosure</h2>
+    <p>We do not sell, rent, or trade your personal information to any third parties for marketing, advertising, or any other purposes. We only share data with the following trusted service providers strictly necessary for the extension to function:</p>
+    <ul>
+      <li><strong>Google Generative AI (Gemini):</strong> Processes question text to generate answers under Google's enterprise API privacy terms.</li>
+      <li><strong>Lemon Squeezy:</strong> If you subscribe to Pro, your license key is verified via Lemon Squeezy API purely to validate your transaction and manage your subscription.</li>
+    </ul>
 
-    <h2>9. Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. Any changes will be reflected in the "Last updated" date above and in updated versions of the extension.</p>
+    <p><strong>Limited Use Compliance:</strong> The Quiz Solver AI extension complies with the <a href="https://developer.chrome.com/docs/webstore/user_data/" target="_blank">Chrome Web Store User Data Policy</a>, including the Limited Use requirements. Specifically, we affirm that:</p>
+    <ul>
+      <li><strong>Allowed use:</strong> We only use permissions and process user data to provide or improve our single purpose and core user-facing features (detecting and solving quiz questions).</li>
+      <li><strong>Allowed transfer:</strong> We only transfer user data to third parties if that transfer is necessary to provide the core AI solving and license verification, comply with applicable laws, or protect security.</li>
+      <li><strong>Prohibited advertising:</strong> We <strong>NEVER</strong> use or transfer user data to serve personalized, re-targeted, or interest-based advertisements.</li>
+      <li><strong>Prohibited human interaction:</strong> We do not allow humans to read user data unless we obtain your explicit consent, it is necessary for security purposes, or required by law.</li>
+    </ul>
 
-    <h2>10. Contact</h2>
-    <p>If you have questions about this privacy policy, please contact the developer through the Chrome Web Store listing.</p>
+    <h2>6. User Rights &amp; Data Deletion</h2>
+    <p>You have full control over your data at all times. Because your preferences are stored locally in your browser, you can delete all your data instantly at any time simply by:</p>
+    <ul>
+      <li>Clicking the <strong>"Clear"</strong> button in the extension popup to wipe your stored API key.</li>
+      <li>Uninstalling the extension from <code>chrome://extensions/</code> to wipe all local data completely.</li>
+    </ul>
 
-    <hr class="divider">
-    <p style="font-size: 13px; color: #6b6b7b;">© 2026 Quiz Solver AI. All rights reserved.</p>
+    <h2>7. Children’s Privacy (COPPA)</h2>
+    <p>Our extension is not directed to children under the age of 13 (or 16 in certain jurisdictions), and we do not knowingly collect personal information from children. If we become aware that personal information from a child has been collected, we will delete it immediately.</p>
+
+    <h2>8. Contact Us</h2>
+    <p>If you have any questions, concerns, or inquiries regarding this Privacy Policy or data practices, please contact the developer at: <a href="mailto:hle019dn@gmail.com">hle019dn@gmail.com</a></p>
+
+    <div class="footer">
+      &copy; 2026 Quiz Solver AI. All rights reserved.
+    </div>
   </div>
 </body>
 </html>

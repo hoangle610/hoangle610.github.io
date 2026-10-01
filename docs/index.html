@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Popup Terminator - Popup & Ad Blocker for Chrome, Edge and Firefox</title>
+  <meta name="description" content="Popup blocker built for Manifest V3. Stops popups, popunders and overlays, skips YouTube ads. Keeps working when old blockers stop. Free, private, open source core.">
+  <meta property="og:title" content="Popup Terminator - Popup & Ad Blocker">
+  <meta property="og:description" content="Stops popups, popunders and overlays. Skips YouTube ads. Built for Manifest V3.">
+  <meta property="og:image" content="../store_assets/marquee_1400x560.png">
+  <link rel="icon" href="../assets/icon_32.png">
+  <style>
+    :root { --bg:#1e1e2e; --panel:#313244; --text:#cdd6f4; --muted:#a6adc8; --accent:#cba6f7; --danger:#f38ba8; --success:#a6e3a1; --warn:#f9e2af; --border:#45475a; }
+    * { box-sizing: border-box; }
+    body { margin:0; background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; line-height:1.5; }
+    a { color: var(--accent); }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+    nav { display:flex; justify-content:space-between; align-items:center; padding:20px 0; }
+    nav .brand { display:flex; align-items:center; gap:10px; font-weight:700; color:var(--text); text-decoration:none; }
+    nav .brand img { width:32px; height:32px; border-radius:8px; }
+    nav .links a { margin-left: 20px; color: var(--muted); text-decoration:none; font-size:14px; }
+    .hero { text-align:center; padding: 60px 0 40px; background: radial-gradient(800px 400px at 50% 0%, #2a2a40, transparent); }
+    .hero h1 { font-size: 44px; margin: 0 0 16px; line-height:1.15; }
+    .hero h1 span { color: var(--danger); }
+    .hero p { font-size: 18px; color: var(--muted); max-width: 640px; margin: 0 auto 28px; }
+    .cta { display:inline-block; padding: 14px 28px; border-radius: 10px; text-decoration:none; font-weight:700; font-size:16px; margin: 6px; }
+    .cta.primary { background: linear-gradient(135deg, var(--accent), var(--danger)); color:#11111b; box-shadow:0 8px 24px rgba(203,166,247,.35); }
+    .cta.secondary { background: var(--panel); color: var(--text); border:1px solid var(--border); }
+    .mv3 { display:inline-block; margin-top: 18px; font-size: 13px; color: var(--warn); background: rgba(249,226,175,.1); border:1px solid rgba(249,226,175,.3); padding: 6px 12px; border-radius: 20px; }
+    .shot { margin: 40px auto 0; max-width: 900px; border-radius: 14px; overflow:hidden; border:1px solid var(--border); box-shadow: 0 20px 60px rgba(0,0,0,.5); }
+    .shot img { display:block; width:100%; }
+    section { padding: 60px 0; }
+    h2 { font-size: 28px; margin: 0 0 30px; text-align:center; }
+    .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
+    .card { background: var(--panel); border:1px solid var(--border); border-radius: 14px; padding: 22px; }
+    .card .ico { font-size: 28px; margin-bottom: 10px; }
+    .card h3 { margin: 0 0 8px; font-size: 17px; }
+    .card p { margin:0; color: var(--muted); font-size: 14px; }
+    .card.pro { border-color: rgba(249,226,175,.4); }
+    .tag { font-size: 10px; font-weight:700; background: var(--warn); color:#11111b; padding: 2px 6px; border-radius: 4px; margin-left: 6px; vertical-align: middle; }
+    .faq details { background: var(--panel); border:1px solid var(--border); border-radius: 10px; padding: 14px 18px; margin-bottom: 10px; }
+    .faq summary { cursor:pointer; font-weight:600; }
+    .faq p { color: var(--muted); margin: 10px 0 0; font-size: 14px; }
+    footer { border-top: 1px solid var(--border); padding: 30px 0; color: var(--muted); font-size: 13px; text-align:center; }
+    footer a { margin: 0 10px; }
+    @media (max-width: 600px) { .hero h1 { font-size: 32px; } nav .links { display:none; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="#"><img src="../assets/icon_128.png" alt="">Popup Terminator</a>
+      <div class="links">
+        <a href="#features">Features</a>
+        <a href="#pro">Pro</a>
+        <a href="#faq">FAQ</a>
+        <a href="../PRIVACY_POLICY.md">Privacy</a>
+      </div>
+    </nav>
+  </div>
+
+  <header class="hero">
+    <div class="wrap">
+      <h1>Popups, popunders, overlays.<br><span>Terminated.</span></h1>
+      <p>A popup blocker built for Manifest V3 that never breaks your logins. Free forever, with 7 days of Pro included.</p>
+      <!-- TODO: replace # with the real store URLs after publishing -->
+      <a class="cta primary" href="#" id="cta-chrome">Add to Chrome</a>
+      <a class="cta secondary" href="#" id="cta-edge">Edge</a>
+      <a class="cta secondary" href="#" id="cta-firefox">Firefox</a>
+      <div><span class="mv3">Keeps working after Chrome removes Manifest V2 blockers</span></div>
+      <div class="shot"><img src="../store_assets/screenshot_1280x800.png" alt="Popup Terminator blocking a popup"></div>
+    </div>
+  </header>
+
+  <section id="features">
+    <div class="wrap">
+      <h2>What you get for free</h2>
+      <div class="grid">
+        <div class="card"><div class="ico">🛑</div><h3>Blocks before it opens</h3><p>Intercepts window.open on every site. Popups and popunders never get a chance to load.</p></div>
+        <div class="card"><div class="ico">🔑</div><h3>Logins always work</h3><p>Google, Microsoft, Apple, Facebook, GitHub and 40+ sign-in and payment flows are auto-allowed.</p></div>
+        <div class="card"><div class="ico">🩹</div><h3>Site broke? One click</h3><p>"Site broken? Fix it" whitelists the site and reloads. 1000+ popular sites are pre-whitelisted anyway.</p></div>
+        <div class="card"><div class="ico">🎯</div><h3>Strict mode per site</h3><p>Streaming and shortlink sites that abuse same-domain popups get the hard treatment.</p></div>
+        <div class="card"><div class="ico">🔒</div><h3>Private by design</h3><p>Runs entirely in your browser. No history, no analytics, no account. The core is open source.</p></div>
+        <div class="card"><div class="ico">🌐</div><h3>Chrome, Edge, Firefox</h3><p>Same extension everywhere. English and Vietnamese UI, more languages welcome.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pro">
+    <div class="wrap">
+      <h2>Pro <span class="tag">7-DAY FREE TRIAL</span></h2>
+      <div class="grid">
+        <div class="card pro"><div class="ico">🚀</div><h3>YouTube Ad Skipper</h3><p>Mutes, fast-forwards at 16x and hits Skip the instant it appears.</p></div>
+        <div class="card pro"><div class="ico">🛡️</div><h3>Overlay & Paywall Blocker</h3><p>Cookie banners, newsletter modals and "disable your adblocker" walls, gone.</p></div>
+        <div class="card pro"><div class="ico">⏩</div><h3>Auto-Bypass Wait Links</h3><p>Skips "please wait 10 seconds" timers and shortlink redirects.</p></div>
+        <div class="card pro"><div class="ico">🚫</div><h3>Floating Mini-Player Killer</h3><p>No more videos following you down the page.</p></div>
+        <div class="card pro"><div class="ico">🧼</div><h3>Ultra-Clean Page</h3><p>Network-level ad blocking with declarativeNetRequest. Faster loads.</p></div>
+        <div class="card pro"><div class="ico">🎯</div><h3>Element Zapper</h3><p>Right-click anything annoying and hide it forever on that site.</p></div>
+      </div>
+      <p style="text-align:center;margin-top:28px;color:var(--muted)">One-time license, no subscription. <a href="https://visionflow-pro.lemonsqueezy.com/checkout/buy/6a670c62-3231-44e4-a9c8-1b9cf420d78f">Get a license</a></p>
+    </div>
+  </section>
+
+  <section id="faq" class="faq">
+    <div class="wrap">
+      <h2>FAQ</h2>
+      <details><summary>Why does it need access to all websites?</summary><p>Popups can come from any site, so the blocker has to run everywhere. It only intercepts window.open and reads nothing else. There is no server; nothing leaves your browser.</p></details>
+      <details><summary>Will it break my bank or work tools?</summary><p>Sign-in and payment flows are explicitly allowed, and 1000+ popular domains are pre-whitelisted. If something still breaks, press "Site broken? Fix it".</p></details>
+      <details><summary>What happens when the trial ends?</summary><p>Popup blocking stays free forever. Pro modules switch off until you enter a license key. Your settings are kept.</p></details>
+      <details><summary>How is this different from uBlock Origin?</summary><p>uBlock Origin is a full content blocker that Chrome is phasing out with Manifest V2. Popup Terminator is focused on popups and overlays, built on Manifest V3, and designed to coexist with any ad blocker you already use.</p></details>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <a href="../PRIVACY_POLICY.md">Privacy Policy</a>
+      <a href="mailto:hle019dn@gmail.com">Contact</a>
+      <a href="https://buymeacoffee.com/nanamii">Donate</a>
+      <div style="margin-top:10px">© 2026 Popup Terminator</div>
+    </div>
+  </footer>
+</body>
+</html>

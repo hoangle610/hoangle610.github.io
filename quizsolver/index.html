@@ -98,18 +98,16 @@
     <h2>1. Extension Permissions &amp; Justification</h2>
     <p>To function correctly, the extension requests the following permissions. Here is how they are used and how they relate to your privacy:</p>
     <ul>
-      <li><span class="badge">&lt;all_urls&gt;</span> <strong>(Access to quiz platforms):</strong> Required so the extension can detect multiple-choice quiz questions, radio buttons, and checkboxes across varied educational LMS portals (Canvas, Blackboard, Moodle, Harvard ManageMentor, Google Forms, and custom university test URLs). We <strong>DO NOT</strong> monitor, track, collect, or store your web browsing history. The extension only analyzes question elements locally on the active page when you request it.</li>
-      <li><span class="badge">activeTab</span> <strong>(Active Tab Interaction):</strong> Allows the extension to interact with the currently opened quiz tab when you click "Solve Quiz" or press the <kbd>Alt + A</kbd> keyboard shortcut to scan questions and apply visual answer highlights.</li>
-      <li><span class="badge">storage</span> <strong>(Local Settings):</strong> Used exclusively to save your local extension preferences (such as selected AI model, auto-click toggles, personal API key if using Free mode, and Pro license activation state) locally on your device.</li>
-      <li><span class="badge">scripting</span> <strong>(Visual Answer Highlighting):</strong> Required to apply visual highlight badges (e.g. green border around the optimal answer) and auto-select choices directly in the web page.</li>
-      <li><span class="badge">webNavigation</span> <strong>(Nested Frame Support):</strong> Required to enumerate and detect quiz questions embedded inside sub-frames and iframes, which is common in complex learning platforms such as Harvard ManageMentor and Canvas LMS.</li>
+      <li><span class="badge">activeTab</span> <strong>(Active Tab Interaction):</strong> The extension requests no permanent access to any website. Chrome grants it temporary access to the current tab only when you click "Solve Quiz" or press the <kbd>Alt + A</kbd> keyboard shortcut; that access is used to capture the visible quiz and display the answers board. We <strong>DO NOT</strong> monitor, track, collect, or store your web browsing history, and nothing runs on pages you have not invoked the extension on.</li>
+      <li><span class="badge">storage</span> <strong>(Local Settings):</strong> Used exclusively to save your local extension preferences (such as selected AI model, personal API key if using Free mode, and Pro license activation state) locally on your device.</li>
+      <li><span class="badge">scripting</span> <strong>(Answers Board):</strong> Required to load the floating answers board into the quiz tab after you invoke the extension. The extension does not modify, click, or type into any element of the page.</li>
     </ul>
 
     <h2>2. User Data Collection</h2>
     <p>We collect the absolute bare minimum amount of data required to provide our quiz-solving assistance:</p>
     <ul>
-      <li><strong>Quiz Question Data:</strong> The text of visible quiz questions and answer options on your active screen is temporarily parsed when you click solve. This data is processed in real time and is <strong>never logged, permanently saved, or tied to your personal identity</strong>.</li>
-      <li><strong>License Activation Data:</strong> If you upgrade to our Pro or Annual plan, you will enter a License Key. We process this key to validate your purchase status with our payment provider (Lemon Squeezy).</li>
+      <li><strong>Quiz Question Data:</strong> When you click "Solve Quiz" or press the shortcut, a screenshot of the currently visible area of the active tab is captured and sent to the AI model so it can read the questions and answer options. The screenshot is processed in real time and is <strong>never logged, permanently saved, or tied to your personal identity</strong>. Make sure only the quiz is visible on screen before solving.</li>
+      <li><strong>License Activation Data:</strong> If you upgrade to our Pro or Annual plan, you will enter a License Key. We process this key to validate your purchase status with our payment provider (Lemon Squeezy). To enforce fair-use limits, our server keeps a one-way hashed identifier of the license key together with a monthly count of solved quizzes; the key itself and the quiz content are not stored.</li>
       <li><strong>Custom API Key (Optional):</strong> If you choose the Free (BYOK) mode, your personal Gemini API key is stored strictly on your local browser. It is never transmitted to our servers.</li>
       <li><strong>What we DO NOT collect:</strong> We absolutely do not collect your personal browsing history, unrelated web page URLs, search queries, personal emails, passwords, or financial/credit card details.</li>
     </ul>
@@ -117,7 +115,7 @@
     <h2>3. User Data Handling (How We Use Your Data)</h2>
     <p>We only use the data we process for the sole purpose of operating the extension's core features:</p>
     <ul>
-      <li><strong>Quiz Solving:</strong> Question text is transmitted securely to Google's official Gemini AI API (or through our secure serverless proxy) strictly to analyze choices and return the optimal answer choice.</li>
+      <li><strong>Quiz Solving:</strong> The screenshot of the visible quiz is transmitted securely to Google's official Gemini AI API (or through our secure serverless proxy in Pro mode) strictly to analyze choices and return the optimal answer choice.</li>
       <li><strong>License Validation:</strong> The License Key you enter is transmitted to our backend merchant (Lemon Squeezy) to verify your Pro subscription status and unlock cloud solving.</li>
       <li><strong>Payments:</strong> All subscription and payment processing is handled entirely by our merchant of record (<strong>Lemon Squeezy</strong>). We do not handle, process, or see your credit card or banking information.</li>
     </ul>
